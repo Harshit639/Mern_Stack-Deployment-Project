@@ -13,4 +13,4 @@ app.get("/books", async function(req,res){
     let list= await collection.find({}).toArray();
     res.json(list)
 })
-app.listen(3000)
+app.listen(process.env.portx)
